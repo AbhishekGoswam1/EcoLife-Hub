@@ -30,6 +30,9 @@ li{
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
@@ -227,7 +230,9 @@ li{
     padding-right: 5px;
   }
 
-
+  .main{
+    height: 80vh;
+  }
 
   .menu-icon {
     display: block;
@@ -591,11 +596,11 @@ flex-direction: column;
 /* Submit button styling */
 button[type="submit"] {
   /* width: 100%; */
-  padding: 10px 20px;
+  padding: 8px 20px;
   background-color: #27ae60;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
@@ -684,7 +689,3 @@ footer{
   margin-bottom: -30px;
   padding: 0;
 }
-
-
-/* Responsive styling */
-

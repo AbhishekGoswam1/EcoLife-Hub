@@ -1,0 +1,73 @@
+/* Ensure the body takes up the full height of the viewport */
+  .form-container {
+    /* position: absolute;
+    top:30%;
+    left: 10vw; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-toggle {
+    margin-bottom: 20px;
+  }
+  
+  .form-toggle button {
+    background-color: #2f855a;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-toggle button:hover {
+    background-color: #276749;
+  }
+  
+  .signup-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .signup-container input:focus {
+    border-color: #2f855a;
+    box-shadow: 0 0 5px rgba(47, 133, 90, 0.5);
+    outline: none;
+  }
+  
+  .signup-container button {
+    background-color: #2f855a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .signup-container h2{
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  
+  .signup-container button:hover {
+    background-color: #276749;
+  }
