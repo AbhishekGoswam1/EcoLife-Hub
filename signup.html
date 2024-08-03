@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EcoLife Hub | Signup Page</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet" />
+        <link rel="icon" href="./images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      </head>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="leftsection"><a href="index.html">EcoLife Hub</a></div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="menulist">
+            <li class="menuitems"><a href="index.html">Home</a></li>
+            <li class="menuitems"><a href="#articles">Articles</a></li>
+            <li class="menuitems"><a href="#about">About Us</a></li>
+            <a href="#"><button type="button" class="signup">Signup</button></a>
+    
+            <div class="container">
+              <input checked="" class="checkbox" type="checkbox" />
+              <div class="mainbox">
+                <div class="iconContainer">
+                  <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                    <path
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                    </path>
+                  </svg>
+                </div>
+                <input class="search_input" placeholder="search" type="text" />
+              </div>
+            </div>
+          </ul>
+      </nav>
+
+    <div class="signup-container">
+        <div class="signup-form">
+            <h1>Signup</h1>
+            <form action="signup.php" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit" name="signup">Signup</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    
+</body>
+</html>

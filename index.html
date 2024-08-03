@@ -1,301 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoLife Hub</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="leftsection"><a href="#">EcoLife Hub</a></div>
-      <div class="rightsection">
-        <ul class="menulist">
-          <li class="menuitems"><a href="#">Home</a></li>
-          <li class="menuitems"><a href="#articles">Articles</a></li>
-          <li class="menuitems"><a href="#about">About Us</a></li>
-          <a href="login.html"
-            ><button type="button" class="login">Login</button></a
-          >
 
-          <div class="container">
-            <input checked="" class="checkbox" type="checkbox" />
-            <div class="mainbox">
-              <div class="iconContainer">
-                <svg
-                  viewBox="0 0 512 512"
-                  height="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="search_icon"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                  ></path>
-                </svg>
-              </div>
-              <input class="search_input" placeholder="search" type="text" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoLife Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+  <!--Navigation bar starts-->
+  <nav class="navbar">
+    <div class="leftsection"><a href="#">EcoLife Hub</a></div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menulist">
+        <li class="menuitems"><a href="#">Home</a></li>
+        <li class="menuitems"><a href="#articles">Articles</a></li>
+        <li class="menuitems"><a href="#about">About Us</a></li>
+        <a href="signup.html"><button type="button" class="signup">Signup</button></a>
+
+        <div class="container">
+          <input checked="" class="checkbox" type="checkbox" />
+          <div class="mainbox">
+            <div class="iconContainer">
+              <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                </path>
+              </svg>
             </div>
-          </div>
-        </ul>
-      </div>
-    </nav>
-
-    <!--Main section starts-->
-    <div class="main">
-      <div class="left">
-        <h1>Embrace Sustainable Living</h1>
-        <p>
-          Welcome to your go-to resource for living a more eco-friendly life.
-        </p>
-      </div>
-      <a href="signup.html"
-        ><button type="button" class="start">Start your Journey</button></a
-      >
-    </div>
-
-    <!--Article section starts-->
-    <div id="articles">
-      <h2>Featured Articles</h2>
-
-      <div class="cards">
-        <div class="card">
-          <img src="./images/article1.jpg" alt="Article 1" />
-          <div class="card-content">
-            <h3>10 Simple Steps to Start Your Sustainable Living Journey</h3>
-            <p>
-              A beginner’s guide to making small, impactful changes in daily
-              life that contribute to sustainability.
-            </p>
-            <a href="article1.html">Read More</a>
+            <input class="search_input" placeholder="search" type="text" />
           </div>
         </div>
+      </ul>
+  </nav>
 
-        <div class="card">
-          <img src="./images/article2.jpg" alt="Article 2" />
-          <div class="card-content">
-            <h3>Tips to Create an Eco-Friendly Home</h3>
-            <p>
-              Practical advice on how to reduce energy consumption, minimize
-              waste, and choose sustainable materials for home improvement.
-            </p>
-            <a href="article2.html">Read More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./images/article3.jpg" alt="Article 3" />
-          <div class="card-content">
-            <h3>What is a Carbon Footprint and How Can You Reduce Yours?</h3>
-            <p>
-              Explain the concept of a carbon footprint, including actionable
-              steps to minimize it.
-            </p>
-            <a href="article3.html">Read More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./images/article4.jpg" alt="Article 4" />
-          <div class="card-content">
-            <h3>Growing Your Own Food: The Basics of Sustainable Gardening</h3>
-            <p>
-              An introduction to starting a home garden, focusing on organic
-              method and choosing sustainable plants.
-            </p>
-            <a href="article4.html">Read More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./images/article5.jpg" alt="Article 5" />
-          <div class="card-content">
-            <h3>Water Conservation at Home: Simple Changes for Big Impact</h3>
-            <p>
-              Provide tips on how to save water at home, from fixing leaks to
-              choosing drought-resistant plants.
-            </p>
-            <a href="article5.html">Read More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./images/article6.jpg" alt="Article 6" />
-          <div class="card-content">
-            <h3>Sustainable Fashion: How to Build an Eco-Friendly Wardrobe</h3>
-            <p>
-              Guide readers on making more sustainable clothing choices,
-              choosing eco-friendly brands.
-            </p>
-            <a href="article6.html">Read More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./images/article7.jpg" alt="Article 7" />
-          <div class="card-content">
-            <h3>Zero Waste Living: Tips for Reducing Household Waste</h3>
-            <p>
-              Offer practical advice on how to minimize waste at home, including
-              composting, recycling, and avoiding single-use items.
-            </p>
-            <a href="article7.html">Read More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./images/article8.jpg" alt="Article 8" />
-          <div class="card-content">
-            <h3>Harnessing Solar Power: Is It Right for Your Home?</h3>
-            <p>
-              Discuss the benefits and considerations of installing solar
-              panels, including cost, efficiency, and environmental impact.
-            </p>
-            <a href="article8.html">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--about section starts-->
-    <section id="about">
-      <h2>About Us</h2>
-      <div class="about-content">
-        <div class="about-section">
-          <h3>Our Mission</h3>
-          <p>
-            Our mission at EcoLife Hub is to inspire and empower individuals to
-            embrace sustainable living. We aim to provide clear, actionable
-            advice and resources that make it easy for everyone to make
-            eco-friendly choices and contribute to a healthier planet.
-          </p>
-        </div>
-
-        <div class="about-section">
-          <h3>What We Do</h3>
-          <p>
-            At EcoLife Hub, we offer a wealth of resources to promote
-            sustainable living. We provide informative articles on eco-friendly
-            practices, suggest sustainable products, and share DIY tips to help
-            you reduce your environmental impact. Our goal is to make it easy
-            for you to live a more sustainable lifestyle.
-          </p>
-        </div>
-      </div>
-      <a href="login.html"><button class="join">Join Us</button></a>
-      <!-- <div id="team"> -->
-      <div class="team-detail">
-        <h3>Our Team</h3>
-        <p>
-          Our team's name is <strong>Web Builders</strong>, and here are all
-          members:
-        </p>
-      </div>
-      <div class="team">
-        <div class="team-member">
-          <h4>Abhishek</h4>
-          <p>
-            MCA, 2nd Year <br />
-            DPG Degree College Gurgaon
-          </p>
-        </div>
-
-        <div class="team-member">
-          <h4>Kumud Kumar</h4>
-          <p>
-            MCA, 2nd Year <br />
-            DPG Degree College Gurgaon
-          </p>
-        </div>
-
-        <div class="team-member">
-          <h4>Suraj Singh</h4>
-          <p>
-            MCA, 2nd Year <br />
-            DPG Degree College Gurgaon
-          </p>
-        </div>
-
-        <div class="team-member">
-          <h4>Amit Kumar</h4>
-          <p>
-            MCA, 2nd Year <br />
-            DPG Degree College Gurgaon
-          </p>
-        </div>
-      </div>
-      <!-- </div> -->
-    </section>
-
-    <!--Footer section starts-->
-    <section id="contact-us">
-      <h2>Contact Us</h2>
+  <!--Main section starts-->
+  <div class="main">
+    <div class="left">
+      <h1>Embrace Sustainable Living!</h1>
       <p>
-        If you have any questions or want to get in touch, please fill out the
-        form below.
+        Welcome to your go-to resource for living a more eco-friendly life.
       </p>
+    </div>
+    <a href="signup.html"><button type="button" class="start">Start your Journey</button></a>
+  </div>
 
-      <form id="contact-form">
-        <div class="input-field">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-  
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+  <!--Article section starts-->
+  <div id="articles">
+    <h2>Featured Articles</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="./images/article1.jpg" alt="Article 1" />
+        <div class="card-content">
+          <h3>10 Simple Steps to Start Your Sustainable Living Journey</h3>
+          <p>
+            A beginner’s guide to making small, impactful changes in daily
+            life that contribute to sustainability.
+          </p>
+          <a href="#" class="read-more"
+            data-content="Begin your sustainable living journey by reducing waste, conserving energy, and choosing eco-friendly products. Opt for sustainable transportation, save water, and adopt a plant-based diet. Support local businesses, grow your own food, and continuously educate yourself and others about sustainable practices. Every small step contributes to a greener, more sustainable future.">Read
+            More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/article2.jpg" alt="Article 2" />
+        <div class="card-content">
+          <h3>Tips to Create an Eco-Friendly Home</h3>
+          <p>
+            Practical advice on how to reduce energy consumption, minimize
+            waste, and choose sustainable materials for home improvement.
+          </p>
+          <a href="#" class="read-more"
+            data-content="Creating an eco-friendly home starts with simple changes. Use energy-efficient appliances and LED bulbs to reduce energy consumption. Opt for sustainable materials and reduce water usage with efficient fixtures. Embrace recycling and composting, and choose eco-friendly cleaning products. Incorporate natural lighting, insulate your home properly, and maintain a small garden for fresh produce. Small adjustments can lead to significant environmental benefits.">Read
+            More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/article3.jpg" alt="Article 3" />
+        <div class="card-content">
+          <h3>What is a Carbon Footprint and How Can You Reduce Yours?</h3>
+          <p>
+            Explain the concept of a carbon footprint, including actionable
+            steps to minimize it.
+          </p>
+          <a href="#" class="read-more"
+            data-content="A carbon footprint measures the total greenhouse gases emitted by your activities, including energy use, transportation, and consumption. To reduce yours, cut down on energy use with efficient appliances, use public transport or carpool, and choose sustainable products. Reduce waste through recycling and composting, and support renewable energy sources. Every action helps lower your environmental impact.">Read
+            More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/article4.jpg" alt="Article 4" />
+        <div class="card-content">
+          <h3>Growing Your Own Food: The Basics of Sustainable Gardening</h3>
+          <p>
+            An introduction to starting a home garden, focusing on organic
+            method and choosing sustainable plants.
+          </p>
+          <a href="#" class="read-more"
+            data-content="Start sustainable gardening by choosing native plants that thrive in your local climate. Use organic soil and compost to enrich the earth naturally. Implement water-saving techniques like drip irrigation and mulch. Practice crop rotation to maintain soil health and reduce pests. Start with easy-to-grow vegetables and herbs to build your gardening skills sustainably.">Read
+            More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/article5.jpg" alt="Article 5" />
+        <div class="card-content">
+          <h3>Water Conservation at Home: Simple Changes for Big Impact</h3>
+          <p>
+            Provide tips on how to save water at home, from fixing leaks to
+            choosing drought-resistant plants.
+          </p>
+          <a href="#" class="read-more"
+            data-content="Save water at home with these simple steps: install low-flow fixtures, fix leaks promptly, and take shorter showers. Turn off the tap while brushing teeth and use a broom instead of a hose to clean driveways. Collect rainwater for gardening and choose drought-tolerant plants. These changes can significantly reduce your water usage and impact.">Read
+            More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/article6.jpg" alt="Article 6" />
+        <div class="card-content">
+          <h3>Sustainable Fashion: How to Build an Eco-Friendly Wardrobe</h3>
+          <p>
+            Guide readers on making more sustainable clothing choices,
+            choosing eco-friendly brands.
+          </p>
+          <a href="#" class="read-more"
+            data-content="Build an eco-friendly wardrobe by choosing quality, durable clothing over fast fashion. Opt for brands that use sustainable materials and ethical practices. Embrace second-hand shopping and upcycling to extend the life of garments. Care for your clothes properly to reduce waste, and recycle or donate items you no longer need. Small choices can make a big difference in sustainable fashion.">Read
+            More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/article7.jpg" alt="Article 7" />
+        <div class="card-content">
+          <h3>Zero Waste Living: Tips for Reducing Household Waste</h3>
+          <p>
+            Offer practical advice on how to minimize waste at home, including
+            composting, recycling, and avoiding single-use items.
+          </p>
+          <a href="#" class="read-more"
+            data-content="Achieve zero waste living by minimizing single-use items and opting for reusable alternatives. Compost food scraps, recycle correctly, and buy in bulk to reduce packaging. Embrace DIY solutions for household products and repair rather than discard items. Choosing quality over quantity and planning your purchases can significantly cut down on household waste.">Read
+            More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/article8.jpg" alt="Article 8" />
+        <div class="card-content">
+          <h3>Utilizing Solar Power: Is It Right for Your Home?</h3>
+          <p>
+            Discuss the benefits and considerations of installing solar
+            panels, including cost, efficiency, and environmental impact.
+          </p>
+          <a href="#" class="read-more"
+            data-content="Consider solar power for your home by evaluating your energy needs and roof space. Assess sunlight exposure and the cost of installation versus long-term savings. Solar panels can reduce electricity bills and lower your carbon footprint. Consult with a solar provider to determine if it’s a feasible and cost-effective option for your home.">Read
+            More</a>
+        </div>
+      </div>
+
+      <!-- Popup Window -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <p id="popup-text"></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--about section starts-->
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <div class="about-section">
+        <h3>Our Mission</h3>
+        <p>
+          Our mission at EcoLife Hub is to inspire and empower individuals to
+          embrace sustainable living. We aim to provide clear, actionable
+          advice and resources that make it easy for everyone to make
+          eco-friendly choices and contribute to a healthier planet.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h3>What We Do</h3>
+        <p>
+          At EcoLife Hub, we offer a wealth of resources to promote
+          sustainable living. We provide informative articles on eco-friendly
+          practices, suggest sustainable products, and share DIY tips to help
+          you reduce your environmental impact. Our goal is to make it easy
+          for you to live a more sustainable lifestyle.
+        </p>
+      </div>
+    </div>
+    <a href="login.html"><button class="join">Join Us</button></a>
+    <!-- <div id="team"> -->
+    <div class="team-detail">
+      <h3>Our Team</h3>
+      <p>
+        Our team's name is <strong>Web Builders</strong>, and here are all
+        members:
+      </p>
+    </div>
+    <div class="team">
+      <div class="team-member">
+        <h4>Abhishek</h4>
+        <p>
+          MCA, 2nd Year <br />
+          DPG Degree College Gurgaon
+        </p>
+      </div>
+
+      <div class="team-member">
+        <h4>Kumud Kumar</h4>
+        <p>
+          MCA, 2nd Year <br />
+          DPG Degree College Gurgaon
+        </p>
+      </div>
+
+      <div class="team-member">
+        <h4>Suraj Singh</h4>
+        <p>
+          MCA, 2nd Year <br />
+          DPG Degree College Gurgaon
+        </p>
+      </div>
+
+      <div class="team-member">
+        <h4>Amit Kumar</h4>
+        <p>
+          MCA, 2nd Year <br />
+          DPG Degree College Gurgaon
+        </p>
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
+
+  <!--Footer section starts-->
+  <section id="contact-us">
+    <h2>Contact Us</h2>
+    <p>
+      If you have any questions or want to get in touch, please fill out the
+      form below.
+    </p>
+
+    <form id="contact-form">
+      <div class="input-field">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
         </div>
 
-        <div class="form-group message">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
         </div>
+      </div>
 
-        <button type="submit">Send Message</button>
-      </form>
+      <div class="form-group message">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="3" required></textarea>
+      </div>
 
-      <p id="output"></p>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="output"></p>
 
     </div>
 
-    </section>
-  
+  </section>
+
   <footer id="footer">
 
     <div id="connect-with-us">
       <h3>Connect with Us</h3>
       <p>Join our community on social media or drop us an email. We'd love to hear from you!</p>
-      
+
       <div class="social-buttons">
         <a href="https://linkedin.com/" class="social-button LinkedIn">
           <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://twitter.com" class="social-button twitter">
+        </a>
+        <a href="https://twitter.com" class="social-button twitter">
           <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://instagram.com" class="social-button instagram">
+        </a>
+        <a href="https://instagram.com" class="social-button instagram">
           <i class="fab fa-instagram"></i>
-      </a>
-      <a href="mailto:goswami9729@gmail.com" class="social-button email">
+        </a>
+        <a href="mailto:goswami9729@gmail.com" class="social-button email">
           <i class="fas fa-envelope"></i>
       </div>
 
       <p class="cprght">&copy; 2024 EcoLife Hub. All rights reserved.</p>
-    </footer>
-  
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+</body>
+
 </html>

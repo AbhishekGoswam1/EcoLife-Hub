@@ -19,3 +19,7 @@ form.addEventListener('submit', function(event) {
     output.style.color = '#27ae60'; // Optional: Style the message (green color for success)
     output.style.marginTop = '20px'; // Optional: Add some margin to the top for spacing
 });
+
+
+//popup article
+
