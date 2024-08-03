@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sustainable Living Guide Website</title>
+    <title>EcoLife Hub</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,17 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="menubar">
+    <nav class="navbar">
       <div class="leftsection"><a href="#">EcoLife Hub</a></div>
       <div class="rightsection">
         <ul class="menulist">
           <li class="menuitems"><a href="#">Home</a></li>
           <li class="menuitems"><a href="#articles">Articles</a></li>
           <li class="menuitems"><a href="#about">About Us</a></li>
-            
-          <a href="login.html"><button type="button" class="login">Login</button></a>
+          <a href="login.html"
+            ><button type="button" class="login">Login</button></a
+          >
 
           <div class="container">
             <input checked="" class="checkbox" type="checkbox" />
@@ -43,7 +49,7 @@
           </div>
         </ul>
       </div>
-    </div>
+    </nav>
 
     <!--Main section starts-->
     <div class="main">
@@ -51,9 +57,6 @@
         <h1>Embrace Sustainable Living</h1>
         <p>
           Welcome to your go-to resource for living a more eco-friendly life.
-          Our platform is designed to help you discover practical tips,
-          inspiring stories, and expert advice on how to make sustainable
-          choices every day.
         </p>
       </div>
       <a href="signup.html"
@@ -164,13 +167,134 @@
       </div>
     </div>
 
-    <!--goals section starts-->
-    <div id="goals">
-      <h2>Our Main Goals</h2>
-      <div></div>
-    </div>
+    <!--about section starts-->
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <div class="about-section">
+          <h3>Our Mission</h3>
+          <p>
+            Our mission at EcoLife Hub is to inspire and empower individuals to
+            embrace sustainable living. We aim to provide clear, actionable
+            advice and resources that make it easy for everyone to make
+            eco-friendly choices and contribute to a healthier planet.
+          </p>
+        </div>
+
+        <div class="about-section">
+          <h3>What We Do</h3>
+          <p>
+            At EcoLife Hub, we offer a wealth of resources to promote
+            sustainable living. We provide informative articles on eco-friendly
+            practices, suggest sustainable products, and share DIY tips to help
+            you reduce your environmental impact. Our goal is to make it easy
+            for you to live a more sustainable lifestyle.
+          </p>
+        </div>
+      </div>
+      <a href="login.html"><button class="join">Join Us</button></a>
+      <!-- <div id="team"> -->
+      <div class="team-detail">
+        <h3>Our Team</h3>
+        <p>
+          Our team's name is <strong>Web Builders</strong>, and here are all
+          members:
+        </p>
+      </div>
+      <div class="team">
+        <div class="team-member">
+          <h4>Abhishek</h4>
+          <p>
+            MCA, 2nd Year <br />
+            DPG Degree College Gurgaon
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h4>Kumud Kumar</h4>
+          <p>
+            MCA, 2nd Year <br />
+            DPG Degree College Gurgaon
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h4>Suraj Singh</h4>
+          <p>
+            MCA, 2nd Year <br />
+            DPG Degree College Gurgaon
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h4>Amit Kumar</h4>
+          <p>
+            MCA, 2nd Year <br />
+            DPG Degree College Gurgaon
+          </p>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
 
     <!--Footer section starts-->
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or want to get in touch, please fill out the
+        form below.
+      </p>
+
+      <form id="contact-form">
+        <div class="input-field">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+  
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+
+        <div class="form-group message">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p id="output"></p>
+
+    </div>
+
+    </section>
+  
+  <footer id="footer">
+
+    <div id="connect-with-us">
+      <h3>Connect with Us</h3>
+      <p>Join our community on social media or drop us an email. We'd love to hear from you!</p>
+      
+      <div class="social-buttons">
+        <a href="https://linkedin.com/" class="social-button LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://twitter.com" class="social-button twitter">
+          <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com" class="social-button instagram">
+          <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:goswami9729@gmail.com" class="social-button email">
+          <i class="fas fa-envelope"></i>
+      </div>
+
+      <p class="cprght">&copy; 2024 EcoLife Hub. All rights reserved.</p>
+    </footer>
+  
 
     <script src="script.js"></script>
   </body>

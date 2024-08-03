@@ -9,6 +9,13 @@ body {
   background-color: rgb(245, 245, 220);
   font-size: 16px;
 }
+input{
+  font-family: inherit;
+}
+
+button{
+  font-family: inherit;
+}
 
 a {
   text-decoration: none;
@@ -18,8 +25,12 @@ ul {
   list-style: none;
 }
 
-.menubar {
-  padding: 15px;
+li{
+  list-style: none;
+}
+
+.navbar {
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +62,6 @@ ul {
   font-size: 1.1rem;
   color: #f7f9f9;
   transition: all 0.3s ease;
-  /* transform: translateZ(0); Add this line */
 }
 
 .menuitems a:hover {
@@ -66,6 +76,12 @@ ul {
   padding: 7px 14px;
   margin-right: 20px;
   font-size: 1.1rem;
+}
+
+.login:hover {
+  background-color: #2f855a;
+  color: #f7f9f9;
+  border: solid 1px #f7f9f9;
 }
 
 .container {
@@ -128,6 +144,7 @@ ul {
   box-sizing: border-box;
   height: 100%;
   width: 170px;
+  outline: none;
   background-color: transparent;
   border: none;
   padding-left: 10px;
@@ -163,7 +180,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(transparent 0%, black 0%, black 90%, transparent 100%);
 }
 
 .left {
@@ -171,7 +188,7 @@ ul {
 }
 
 .left h1 {
-  padding: 10px 20px 0 20px;
+  padding: 10px 20px 0 40px;
   font-size: 3rem;
   font-weight: 700;
   color: #000;
@@ -180,15 +197,15 @@ ul {
 .left p {
   font-size: 1.2rem;
   color: #000;
-  padding: 10px 20px;
+  padding: 10px 40px;
 }
 
 .start {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 2.2rem;
   padding: 0.8em 1em 0.7em 1em;
   font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
   font-weight: 500;
   color: #fff;
   background-color: #2f855a;
@@ -221,7 +238,7 @@ ul {
 }
 
 #articles h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #2f855a;
   margin-bottom: 20px;
@@ -241,7 +258,7 @@ ul {
   padding: 15px;
   margin: 16px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .card:hover {
@@ -277,4 +294,274 @@ ul {
   height: 220px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+#about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#about h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2f855a;
+  margin-bottom: 20px;
+}
+
+.about-content{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.about-section{
+  width: 47%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f7f9f9;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-section h3{
+  font-size: 2.3rem;
+}
+
+.about-section p{
+  font-size: 1.3rem;
+}
+
+.join{
+  font-size: 1.3rem;
+  padding: 8px 16px;
+  margin: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  color: #f7f9f9;
+  background-color: #2f855a;
+  transition: all 0.3s ease;
+}
+
+.join:hover{
+  transform: translateY(-7px);
+}
+
+#team{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-detail{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.team-detail h3{
+  font-size: 2.3rem; 
+  margin: 10px 0 0 0;
+  align-self: center;
+}
+
+.team-detail p{
+  font-size: 1.5rem;
+  margin: 10px 40px;
+}
+
+.team{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team-member{
+  background-color: #2f855a;
+  overflow: hidden;
+  height: 6rem;
+  margin: 20px;
+  padding: 10px 20px 20px 20px;
+  border-radius: 20px;
+}
+
+.team-member h4{
+  font-size: 1.5rem;
+  color: #f7f9f9;
+}
+
+.team-member p{
+  font-size: 1rem;
+  color: #f7f9f9;
+}
+
+
+/* contact us styling */
+#contact-us {
+  background-color: #f7f9f9;
+  width: 100%;
+  /* text-align: center; */
+  height: auto;
+  /* max-width: 600px; */
+  margin-top: 20px;
+  padding: 20px 50px;
+  color: #333; /* Neutral text color */
+}
+
+#contact-us h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+#contact-us p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-field{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.form-group label {
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.form-group input,
+.form-group textarea {
+  /* width: 100%; */
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 1.1rem;
+  border: 2px solid #393939;
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #333;
+}
+
+
+/* Submit button styling */
+button[type="submit"] {
+  /* width: 100%; */
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover state */
+button[type="submit"]:hover {
+  background-color: #218c53;
+}
+
+/* Output message styling */
+#output {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #27ae60;
+  margin-top: 20px;
+}
+
+
+/* connect with us styling */
+
+/* Connect with Us section */
+#connect-with-us {
+  /* margin-top: 20px; */
+  padding: 20px;
+  height: auto;
+  text-align: center;
+  color: #333;
+}
+
+#connect-with-us h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #F5F5DC;
+}
+
+#connect-with-us p {
+  font-size: 1.3rem;
+  color: #F5F5DC;
+  margin-bottom: 20px;
+}
+
+/* Social buttons styling */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-button {
+  display: inline-block;
+  padding: 12px;
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+  color: #F5F5DC;
+}
+
+
+
+/* Footer styling */
+#footer {
+  text-align: center;
+  padding: 20px 0 0 0;
+  background-color: #218c53;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: auto;
+  overflow: hidden;
+}
+
+.cprght{
+  display: inline-block;
+  margin-bottom:0 !important;
+  font-size: 1rem;
+  cursor: default;
+}
+
+footer{
+  margin-bottom: -30px;
+  padding: 0;
 }
