@@ -96,7 +96,7 @@ li {
   margin-right: 15px;
   box-sizing: border-box;
   position: relative;
-  width: 230px;
+  width: 200px;
   height: 40px;
   display: flex;
   flex-direction: row-reverse;
@@ -147,6 +147,7 @@ li {
   height: 100%;
   width: 140px;
   outline: none;
+  background-color: transparent;
   border: none;
   padding: 0 5px;
   font-size: 1em;
@@ -213,7 +214,7 @@ li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-mask-image: linear-gradient(
+  mask-image: linear-gradient(
     transparent 0%,
     black 0%,
     black 90%,
