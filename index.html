@@ -18,16 +18,14 @@
 <body>
   
   <!--Navigation bar starts-->
-  <nav class="navbar">
-    <div class="leftsection"><a href="#">EcoLife Hub</a></div>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="menulist">
-        <li class="menuitems"><a href="#">Home</a></li>
-        <li class="menuitems"><a href="#articles">Articles</a></li>
-        <li class="menuitems"><a href="#about">About Us</a></li>
-        <a href="signup.html"><button type="button" class="signup">Signup</button></a>
-
+  <nav class="sidebar">
+    <ul class="menu">
+      <li onclick=hidesidebar()><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+      <li class="menuitems"><a href="#">Home</a></li>
+      <li class="menuitems"><a href="#articles">Articles</a></li>
+      <li class="menuitems"><a href="#about">About Us</a></li>
+      <li class="menuitems"><a href="signup.html"><button type="button" class="signup">Signup</button></a></li>
+      <li>
         <div class="container">
           <input checked="" class="checkbox" type="checkbox" />
           <div class="mainbox">
@@ -41,6 +39,32 @@
             <input class="search_input" placeholder="search" type="text" />
           </div>
         </div>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="navbar">
+    <div class="leftsection"><a href="#">EcoLife Hub</a></div>
+      <ul class="menulist">
+        <li class="menuitems hideonmobile"><a href="#">Home</a></li>
+        <li class="menuitems hideonmobile"><a href="#articles">Articles</a></li>
+        <li class="menuitems hideonmobile"><a href="#about">About Us</a></li>
+        <li class="menuitems hideonmobile"><a href="signup.html"><button type="button" class="signup">Signup</button></a></li>
+
+        <div class="container hideonmobile">
+          <input checked="" class="checkbox" type="checkbox" />
+          <div class="mainbox">
+            <div class="iconContainer">
+              <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                </path>
+              </svg>
+            </div>
+            <input class="search_input" placeholder="search" type="text" />
+          </div>
+        </div>
+        <li onclick=showsidebar() class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
       </ul>
   </nav>
 
@@ -314,6 +338,7 @@
 
   <script src="script.js"></script>
   <script src="script2.js"></script>
+  <script src="script4.js"></script>
 </body>
 
 </html>
